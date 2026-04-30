@@ -2,13 +2,13 @@
 
 ## 📄 Overview
 
-This project presents a **hybrid optimization approach** for cloud load balancing by combining the strengths of the **Genetic Algorithm (GA)** and the **Honey Bee Algorithm (HBA)**.
+This project implements a **hybrid optimization algorithm (GenBee)** that combines the strengths of the **Genetic Algorithm (GA)** and the **Honey Bee Algorithm (HBA)** to improve **cloud load balancing performance**.
 
-The objective is to enhance:
+The objective is to achieve:
 
-* ⚡ Load distribution efficiency
-* 📉 Convergence speed
-* 🔄 Resource utilization
+* ⚡ Efficient task distribution
+* 📉 Faster convergence
+* 🔄 Better resource utilization
 
 This work is supported by an IEEE publication.
 
@@ -22,104 +22,140 @@ This work is supported by an IEEE publication.
 
 ## 🧠 Methodology
 
-The project evaluates three approaches:
-
 ### 🔹 Genetic Algorithm (GA)
 
-* Evolutionary optimization technique
+* Evolutionary optimization approach
 * Uses selection, crossover, and mutation
-* Strong in global search (exploration)
+* Strong in global exploration
 
 ### 🔹 Honey Bee Algorithm (HBA)
 
-* Swarm intelligence-based optimization
+* Swarm intelligence-based method
 * Inspired by bee foraging behavior
-* Strong in local search (exploitation)
+* Strong in local exploitation
 
-### 🔹 Hybrid Approach (GenBee)
+### 🔹 Hybrid Algorithm (GenBee)
 
 * Combines GA + HBA
 * Balances exploration and exploitation
-* Achieves improved performance in cloud load balancing
+* Improves convergence and solution quality
 
 ---
 
 ## 📊 Results
 
-### 🔹 Algorithm Comparison
+### 🔹 Combined Comparison
 
-![Comparison](results/comparison/comparison_all.png)
+![Combined](results/Combined%20scatterplot.png)
 
 ### 🔹 Average Fitness
 
-![Average Fitness](results/comparison/avg_fitness.png)
+![Average Fitness](results/Average%20Fitness%20output.png)
 
-### 🔹 Average Load Distribution
+### 🔹 Average Load
 
-![Average Load](results/comparison/avg_load.png)
+![Average Load](results/Average%20Load%20output.png)
+
+### 🔹 Individual Algorithms
+
+![GA](results/Scatterplot%20Genetic.png)
+![HBA](results/Scatterplot%20HoneyBee.png)
+![Hybrid](results/Scatterplot%20Hybrid.png)
 
 ---
 
 ## 📝 Key Findings
 
-* ✅ Hybrid algorithm outperforms GA and HBA individually
+* ✅ Hybrid approach outperforms individual GA and HBA
 * ⚡ Faster convergence rate
 * 📊 Improved load balancing efficiency
-* 📉 More stable fitness values across iterations
+* 📉 More stable fitness values
 
 ---
 
 ## 📁 Project Structure
 
 ```bash
-├── data/                  # Input dataset
-├── docs/                  # Paper and documentation
-├── results/               # Output plots and results
+├── data/
+│   └── dataset.csv
+├── docs/
+│   └── paper_link.md
+├── results/
+│   ├── Average Fitness output.png
+│   ├── Average Load output.png
+│   ├── Combined scatterplot.png
+│   ├── Scatterplot Genetic.png
+│   ├── Scatterplot HoneyBee.png
+│   ├── Scatterplot Hybrid.png
+│   └── graphs.png
 ├── src/
 │   ├── Genetic_Algorithm/
 │   ├── Honey_Bee_Algorithm/
 │   ├── Hybrid/
-│   └── visualization/
+│   └── Visualization/
+│       ├── Comparison/
+│       └── Individual_Plotting/
 ├── README.md
 ```
 
 ---
 
+## 🔗 Source Code
+
+* [Genetic Algorithm](https://github.com/3shaa16/GenBee-Hybridization-for-Cloud-Load-Balancing/tree/main/src/Genetic_Algorithm)
+* [Honey Bee Algorithm](https://github.com/3shaa16/GenBee-Hybridization-for-Cloud-Load-Balancing/tree/main/src/Honey_Bee_Algorithm)
+* [Hybrid Algorithm](https://github.com/3shaa16/GenBee-Hybridization-for-Cloud-Load-Balancing/tree/main/src/Hybrid)
+* [Visualization Scripts](https://github.com/3shaa16/GenBee-Hybridization-for-Cloud-Load-Balancing/tree/main/src/Visualization)
+
+---
+
 ## ⚙️ How to Run
 
-### 1. Clone the repository
+### Requirements
 
-```bash
-git clone https://github.com/your-username/your-repo.git
-cd your-repo
+* MATLAB
+* R (for visualization scripts, if applicable)
+
+---
+
+### 🔹 Run Genetic Algorithm
+
+```matlab
+run('src/Genetic_Algorithm')
 ```
 
-### 2. Run algorithms in R
+### 🔹 Run Honey Bee Algorithm
 
-```r
-source("src/Genetic_Algorithm/main.R")
-source("src/Honey_Bee_Algorithm/main.R")
-source("src/Hybrid/main.R")
+```matlab
+run('src/Honey_Bee_Algorithm')
 ```
 
-### 3. Generate visualizations
+### 🔹 Run Hybrid Algorithm
 
-```r
-source("src/visualization/plot_comparison.R")
-source("src/visualization/plot_avg_fitness.R")
-source("src/visualization/plot_avg_load.R")
+```matlab
+run('src/Hybrid')
+```
+
+---
+
+### 🔹 Generate Visualizations
+
+Run scripts from:
+
+```matlab
+src/Visualization/Comparison/
+src/Visualization/Individual_Plotting/
 ```
 
 ---
 
 ## 🛠️ Technologies Used
 
-* R Programming
-* MATLAB
+* MATLAB (algorithm implementation)
+* R Programming (data visualization)
 * Genetic Algorithm (GA)
 * Honey Bee Algorithm (HBA)
 * Hybrid Optimization Techniques
-* Data Visualization
 
 ---
 
@@ -133,22 +169,23 @@ source("src/visualization/plot_avg_load.R")
 
 ## 🔮 Future Work
 
-* Integration with real-time cloud platforms
-* Scaling for large distributed environments
-* Exploration of additional hybrid metaheuristic models
+* Integration with real cloud environments
+* Scaling for large distributed systems
+* Exploration of advanced hybrid metaheuristics
 
 ---
 
 ## 👨‍💻 Authors
 
-Sheetal Dash
-Tanusha Hande
-Trisha Hegde
-Kumud Wasnik
+* Sheetal Dash
+* Tanusha Hande
+* Trisha Hegde
+* Kumud Wasnik
 
 ---
 
 ## 📜 License
 
 This project is licensed under the MIT License.
+
 
