@@ -45,21 +45,29 @@ This work is supported by an IEEE publication.
 ## 📊 Results
 
 ### 🔹 Combined Comparison
+Provides a side-by-side performance comparison of GA, HBA, and the hybrid approach across key metrics.
 
 ![Combined](results/Combined%20scatterplot.png)
 
 ### 🔹 Average Fitness
+Represents the mean optimization quality of solutions across iterations, indicating how well each algorithm converges.
 
 ![Average Fitness](results/Average%20Fitness%20output.png)
 
 ### 🔹 Average Load
+Shows the average distribution of workload across resources, reflecting the effectiveness of load balancing.
 
 ![Average Load](results/Average%20Load%20output.png)
 
 ### 🔹 Individual Algorithms
 
+#### Genetic Algorithm
 ![GA](results/Scatterplot%20Genetic.png)
+
+#### Honey Bee Algorithm
 ![HBA](results/Scatterplot%20HoneyBee.png)
+
+#### Hybrid Algorithm
 ![Hybrid](results/Scatterplot%20Hybrid.png)
 
 ---
@@ -121,19 +129,19 @@ This work is supported by an IEEE publication.
 ### 🔹 Run Genetic Algorithm
 
 ```matlab
-run('src/Genetic_Algorithm')
+run('src/Genetic_Algorithm/GeneticAlgorithm.m')
 ```
 
 ### 🔹 Run Honey Bee Algorithm
 
 ```matlab
-run('src/Honey_Bee_Algorithm')
+run('src/Honey_Bee_Algorithm/hb.m')
 ```
 
 ### 🔹 Run Hybrid Algorithm
 
 ```matlab
-run('src/Hybrid')
+run('src/Hybrid/GeneticAlgorithm.m')
 ```
 
 ---
